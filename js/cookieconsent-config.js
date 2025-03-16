@@ -42,19 +42,21 @@ CookieConsent.run({
 // Funzione per caricare Google Analytics
 function loadGoogleAnalytics()
 {
-    var script = document.createElement('script');
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-S9VGT9VX9Y";
-    script.async = true;
-    script.onload = function()
-    {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() 
-        {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    // var script = document.createElement('script');
+    // script.src = "https://www.googletagmanager.com/gtag/js?id=G-S9VGT9VX9Y";
+    // script.async = true;
+    // script.onload = function()
+    // {
+    //     window.dataLayer = window.dataLayer || [];
+    //     function gtag() 
+    //     {
+    //         dataLayer.push(arguments);
+    //     }
+    //     gtag('js', new Date());
 
-        gtag('config', 'G-S9VGT9VX9Y');
-    };
-    document.head.appendChild(script);
+    //     gtag('config', 'G-S9VGT9VX9Y');
+    // };
+    // document.head.appendChild(script);
+
+    console.log("abilita GA");
 }
