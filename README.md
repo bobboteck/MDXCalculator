@@ -8,7 +8,9 @@ L'applicazione funziona completamente sul client, tramite codice Javascript, nes
 Tutto il codice è Open Source e rilasciato con licenza MIT, ed è disponibile in questo repository.
 Eventuali segnalazioni per BUG o miglioramenti, possono essere fatte usando la sezione [Issues](https://github.com/bobboteck/MDXCalculator/issues).
 
+![Schermata](https://repository-images.githubusercontent.com/949121107/a7d6d760-3bde-4e81-b716-91c1e0c30e30)
+
 ## Librerie
 
 Per la grafica ho utilizzato Bootstrap 5.
-Per il parsing del file ADIF ho utilizzato la libreria di **[Stephen Houser - N1SH](https://www.qrz.com/db/N1SH)**</b></a>** presente nel suo progetto [QSO Mapper](https://github.com/stephenhouser/qso-mapper).
+Per il parsing del file ADIF ho utilizzato la libreria di **[Stephen Houser - N1SH](https://www.qrz.com/db/N1SH)</b></a>** presente nel suo progetto [QSO Mapper](https://github.com/stephenhouser/qso-mapper).
