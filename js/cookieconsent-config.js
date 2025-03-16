@@ -179,20 +179,27 @@ function loadGoogleAnalytics()
 {
     console.log("abilita GA");
 
-    var script = document.createElement('script');
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-S9VGT9VX9Y";
-    script.async = true;
-    script.onload = function()
-    {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() 
-        {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    // var script = document.createElement('script');
+    // script.src = "https://www.googletagmanager.com/gtag/js?id=G-S9VGT9VX9Y";
+    // script.async = true;
+    // script.onload = function()
+    // {
+    //     window.dataLayer = window.dataLayer || [];
+    //     function gtag() 
+    //     {
+    //         dataLayer.push(arguments);
+    //     }
+    //     gtag('js', new Date());
 
-        gtag('config', 'G-S9VGT9VX9Y');
-    };
+    //     gtag('config', 'G-S9VGT9VX9Y');
+    // };
 
-    document.head.appendChild(script);
+    // document.head.appendChild(script);
+
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-S9VGT9VX9Y');
 }
