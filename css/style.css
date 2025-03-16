@@ -1,0 +1,118 @@
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+.container-fluid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+header {
+    background-color: #3187CC;
+    color: white;
+    padding: 0;
+    text-align: center;
+    border-bottom: 2px solid #0056b3;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+/*.form-section, .tables-section {
+    flex: 1;
+    padding: 2rem;
+}
+.form-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.tables-section {
+    margin-top: 2rem;
+    overflow-y: auto;
+}*/
+.table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.table th, .table td {
+    vertical-align: middle;
+}
+.table th {
+    background-color: #3187CC;
+    color: white;
+    font-weight: bold;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f1f1f1;
+}
+.scrollable-table {
+    max-height: 340px;
+    overflow-y: auto;
+}
+/*.btn-custom {
+    background-color: #28a745;
+    color: white;
+    border-radius: 25px;
+}
+.btn-custom:hover {
+    background-color: #218838;
+}*/
+.card-header {
+    background-color: #3187CC;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.card-body {
+    background-color: #f8f9fa;
+}
+/* Box style for score summary */
+.score-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+.score-box:hover {
+    transform: translateY(-10px);
+}
+.score-box .score-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3187CC;
+}
+.score-box .score-value {
+    font-size: 2rem;
+    color: #333;
+}
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Sticky header for the table */
+.table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.buttonCol
+{
+    display: flex;
+    align-items: center;
+}
+
+.buttonColMargin
+{
+    margin-top: 5px;
+}

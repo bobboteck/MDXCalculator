@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Maratona DX ha lo scopo di promuovere l’attività DX dei Soci della Sezione ARI di Roma durante tutto l’anno. Questa applicazione ha lo scopo di semplificare il calcolo dei punteggi partendo da un file ADIF">
+    <meta name="author" content="Roberto D'Amico, Bobboteck, IU0PHY">
+    <meta property="article:author" content="Roberto D'Amico, Bobboteck, IU0PHY">
+    <meta property="og:type" content="application">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Bobboteck">
+    <meta property="og:title" content="Maratona DX ARI Roma">
+    <meta property="og:url" content="https://bobboteck.github.io/MDXCalculator/index.html">
+    <meta property="og:description" content="La Maratona DX ha lo scopo di promuovere l’attività DX dei Soci della Sezione ARI di Roma durante tutto l’anno. Questa applicazione ha lo scopo di semplificare il calcolo dei punteggi partendo da un file ADIF">
+    <link rel="canonical" href="https://bobboteck.github.io/MDXCalculator/index.html">
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Roberto D'Amico",
+    "url": "https://bobboteck.github.io/"
+    }
+    </script>
+    <title>Maratona DX Calculator</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Includi il CSS per il banner -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <header>
+            <h1 style="margin-bottom: 0;">Calcolatore punteggi per Maratona DX A.R.I. Sez. di ROMA</h1>
+            
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: 25px; padding-top: 0; padding-bottom: 0;color:#fff;">
+                <i class="bi bi-info-circle"></i>
+            </button>
+        </header>
+
+        <!-- Form Section -->
+        <div class="card shadow-lg m-3">
+            <div class="card-header">
+                Carica i Dati
+            </div>
+            <div class="card-body">
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="fileInput" class="form-label">Seleziona File</label>
+                        <input class="form-control" type="file" id="fileInput" accept=".adi">
+                        <div id="adiFileCounter" class="form-text">&nbsp;</div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="yearSelect" class="form-label">Anno</label>
+                        <select class="form-select" id="yearSelect" disabled>
+                            <option selected>Seleziona Anno</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="modeSelect" class="form-label">Modalità</label>
+                        <select class="form-select" id="modeSelect" disabled>
+                            <option selected>Seleziona Modalità</option>
+                            <option value="SSB, USB, LSB, CW">SSB CW</option>
+                            <option value="RTTY, PSK, FT8, FT4, JT64, JT9">Digitali</option>
+                        </select>
+                    </div>
+                    <div class="col-md-1 buttonCol">
+                        <button id="btnElabora" type="submit" class="btn btn-success buttonColMargin" disabled>Elabora</button>
+                    </div>
+                    <div class="col-md-1 buttonCol">
+                        <button type="button" class="btn btn-warning buttonColMargin" disabled>Esporta</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Tables Section -->
+        <div class="card shadow-lg me-3 mb-3 ms-3">
+            <div class="card-header">
+                Punteggi
+            </div>
+            <div class="card-body">
+                <div class="score-container">
+                    <!-- Box per punteggi -->
+                    <div class="score-box">
+                        <div class="score-title">Country</div>
+                        <div id="contryScore" class="score-value">--</div>
+                    </div>
+                    <div class="score-box">
+                        <div class="score-title">CQ Zone</div>
+                        <div id="cqZoneScore" class="score-value">--</div>
+                    </div>
+                    <div class="score-box">
+                        <div class="score-title">IQ0RM</div>
+                        <div id="iq0rmScore" class="score-value">No</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg ms-3 me-3">
+            <div class="card-header">
+                Collegamenti
+            </div>
+            <div class="card-body">
+                <div class="scrollable-table">
+                    <table class="table table-striped" id="tableQso">
+                        <thead>
+                            <tr>
+                                <th scope="col">Giorno</th>
+                                <th scope="col">Mese</th>
+                                <th scope="col">Ora</th>
+                                <th scope="col">Frequenza</th>
+                                <th scope="col">Modo</th>
+                                <th scope="col">Nominativo</th>
+                                <th scope="col">Country</th>
+                                <th scope="col">CQ Zone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Aggiungi altre righe qui -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Informazioni</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+<p>La Maratona DX ha lo scopo di promuovere l’attività DX dei Soci della <a href="https://www.ariroma.it/wp/" target="_blank">Sezione ARI di Roma</a> durante tutto l’anno.</p>
+<p>Questa applicazione permette di semplificare il calcolo dei punteggi partendo da un file ADIF, l'obbiettivo finale è quello di generare un elenco dei collegamenti utili alla partecipazione della Maratona, al fine di semplificare la compilazione del modulo di participazione.</p>
+<p>
+L'applicazione funziona completamente sul client, tramite codice Javascript, nessun dato del file ADIF viene caricato sul server, ne quatomeno i dati elaborati e i punteggi.<br />
+Tutto il codice è Open Source e rilasciato con licenza MIT, ed è disponibile sul repository <a href="https://github.com/bobboteck/MDXCalculator" target="_blank">https://github.com/bobboteck/MDXCalculator</a>.
+Eventuali segnalazioni per BUG o miglioramenti, possono essere fatte usando la sezione Issues del repository, al seguente link <a href="https://github.com/bobboteck/MDXCalculator/issues" target="_blank">https://github.com/bobboteck/MDXCalculator/issues</a>
+</p>
+<p>
+Per il parsing del file ADIF ho utilizzato la libreria di <a href="https://www.qrz.com/db/N1SH" target="_blank"><b>Stephen Houser - N1SH</b></a> presente in questo progetto: <a href="https://github.com/stephenhouser/qso-mapper" target="_blank">https://github.com/stephenhouser/qso-mapper</a>.
+</p>
+<p>
+Ulteriori informazioni sui miei lavori e la mia attività sul mio sito: <a href="https://github.com/bobboteck/" target="_blank">https://github.com/bobboteck/</a><br />
+73 de IU0PHY (ex IW0GTF) @Bobboteck
+</p>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div> -->
+        </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS e dipendenze -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <!-- Includi il JavaScript per il banner -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js"></script> -->
+    <script src="js/cookieconsent-config.js" type="module" ></script>
+    <script src="js/adif.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
