@@ -1,0 +1,35 @@
+{
+    "years": 
+    [
+        {
+            "year": "2024",
+            "rules":
+            [
+                {
+                    "label": "SSB CW",
+                    "value": "SSB, USB, LSB, CW"
+                },
+                {
+                    "label": "Digitali",
+                    "value": "RTTY, PSK, FT8, FT4, JT64, JT9"
+                }
+            ]
+            
+        },
+        {
+            "year": "2025",
+            "rules":
+            [
+                {
+                    "label": "SSB CW",
+                    "value": "SSB, USB, LSB, CW"
+                },
+                {
+                    "label": "Misto",
+                    "value": "SSB, USB, LSB, CW, RTTY, PSK, FT8, FT4, JT64, JT9"
+                }
+            ]
+            
+        }
+    ]
+}

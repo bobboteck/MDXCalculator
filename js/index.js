@@ -3,6 +3,7 @@
  */
 
 let qsoData = [];
+let rulesConfig = GetRulesConfig();
 
 /***********************
  * Add Events listener *
@@ -65,7 +66,19 @@ function onChangeFileSelection(event)
 
 function onChangeYearSelect(event)
 {
-    document.getElementById("modeSelect").disabled = false;
+    const yearSelect = document.getElementById('yearSelect');
+    const modeSelect = document.getElementById("modeSelect");
+
+    // years.forEach(year => 
+    // {
+    //     // Add e new option element for each year into the array
+    //     const option = document.createElement('option');
+    //     option.value = year;
+    //     option.textContent = year;
+    //     yearSelect.appendChild(option);
+    // });
+
+    modeSelect.disabled = false;
 }
 
 function onChangeModeSelect(event)
@@ -355,4 +368,26 @@ function ResetScoreBox()
     document.getElementById("contryScore").innerText = "--";
     document.getElementById("cqZoneScore").innerText = "--";
     document.getElementById("iq0rmScore").innerText = "No";
+}
+
+function GetRulesConfig()
+{
+    fetch("js/rules.json")
+    .then(response => 
+    {
+        if (!response.ok)
+        {
+            throw new Error('Impossibile caricare il file JSON');
+        }
+
+        return response.json();
+    })
+    .then(jsonData =>
+    {
+        return jsonData;
+    })
+    .catch(error => 
+    {
+        console.error('Errore:', error);
+    });
 }
