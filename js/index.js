@@ -90,6 +90,7 @@ function onClickElabora()
     let isAddedIq0rm = false;
 
     RemoveAllQsoFromTable();
+    ResetScoreBox();
 
     const selectedYear = document.getElementById("yearSelect").value;
     const selectedMode = document.getElementById("modeSelect").value;
@@ -344,4 +345,14 @@ function RemoveAllQsoFromTable()
     {
         tabel.deleteRow(0);
     }
+}
+
+/**
+ * Reset value of score box
+ */
+function ResetScoreBox()
+{
+    document.getElementById("contryScore").innerText = "--";
+    document.getElementById("cqZoneScore").innerText = "--";
+    document.getElementById("iq0rmScore").innerText = "No";
 }
