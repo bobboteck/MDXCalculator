@@ -96,7 +96,8 @@ function onClickElabora()
 
     qsoData.forEach(qso =>
     {
-        if(qso.qso_date.substring(0, 4) === selectedYear && selectedMode.includes(qso.mode))
+        // Elabora solo i QSO dell'anno slezionato, dei modi corrispondenti alla selezione del regolamento e di frequenza inferiore ai 51MHz
+        if(qso.qso_date.substring(0, 4) === selectedYear && selectedMode.includes(qso.mode) && qso.freq < 51)
         {
             // Check if current call is IQ0RM
             if(qso.call.toUpperCase() === "IQ0RM")
