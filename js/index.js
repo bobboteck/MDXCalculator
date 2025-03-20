@@ -390,7 +390,7 @@ function ResetScoreBox()
     document.getElementById("iq0rmScore").innerText = "No";
 }
 
-function GetRulesConfig()
+async function GetRulesConfig()
 {
     if(window.location.protocol === "file:")
     {
