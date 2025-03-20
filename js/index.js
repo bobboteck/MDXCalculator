@@ -430,7 +430,7 @@ async function GetRulesConfig()
         })
         .then(jsonData =>
         {
-            return jsonData;
+            return Promise.resolve(jsonData);
         })
         .catch(error => 
         {
