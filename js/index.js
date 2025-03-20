@@ -69,16 +69,33 @@ function onChangeYearSelect(event)
     const yearSelect = document.getElementById('yearSelect');
     const modeSelect = document.getElementById("modeSelect");
 
-    // years.forEach(year => 
-    // {
-    //     // Add e new option element for each year into the array
-    //     const option = document.createElement('option');
-    //     option.value = year;
-    //     option.textContent = year;
-    //     yearSelect.appendChild(option);
-    // });
+    // Reset select element
+    modeSelect.length = 1;
 
-    modeSelect.disabled = false;
+    // Find rules for the selected year
+    const yearRule = rulesConfig.years.find(item=>item.year === yearSelect.value);
+    const rules = yearRule ? yearRule.rules : [];
+    // If rules is present for that year
+    if(rules.length > 0)
+    {
+        rules.forEach(rule => 
+        {
+            // Add e new option element for each year into the array
+            const option = document.createElement('option');
+            option.value = rule.value;
+            option.textContent = rule.label;
+            modeSelect.appendChild(option);
+        });
+
+        // Enable the dropdown to the selection of Maratone Rule mode
+        modeSelect.disabled = false;
+    }
+    else
+    {
+        ShowMessage("Non sono definite regole per l'anno " + yearSelect.value, "alert");
+        // Enable the dropdown to the selection of Maratone Rule mode
+        modeSelect.disabled = true;
+    }
 }
 
 function onChangeModeSelect(event)
@@ -372,22 +389,48 @@ function ResetScoreBox()
 
 function GetRulesConfig()
 {
-    fetch("js/rules.json")
-    .then(response => 
+    if(window.location.protocol === "file:")
     {
-        if (!response.ok)
+        return {
+            "years": 
+            [
+                {
+                    "year": "2024",
+                    "rules":
+                    [
+                        {
+                            "label": "--SSB CW--",
+                            "value": "SSB, USB, LSB, CW"
+                        },
+                        {
+                            "label": "--Digitali--",
+                            "value": "RTTY, PSK, FT8, FT4, JT64, JT9"
+                        }
+                    ]
+                    
+                }
+            ]
+        };
+    }
+    else
+    {
+        fetch("./js/rules.json")
+        .then(response => 
         {
-            throw new Error('Impossibile caricare il file JSON');
-        }
+            if (!response.ok)
+            {
+                throw new Error('Impossibile caricare il file JSON');
+            }
 
-        return response.json();
-    })
-    .then(jsonData =>
-    {
-        return jsonData;
-    })
-    .catch(error => 
-    {
-        console.error('Errore:', error);
-    });
+            return response.json();
+        })
+        .then(jsonData =>
+        {
+            return jsonData;
+        })
+        .catch(error => 
+        {
+            console.error('Errore:', error);
+        });
+    }
 }
