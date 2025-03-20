@@ -418,7 +418,7 @@ async function GetRulesConfig()
     }
     else
     {
-        fetch("./js/rules.json")
+        return fetch("./js/rules.json")
         .then(response => 
         {
             if (!response.ok)
