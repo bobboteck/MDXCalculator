@@ -1,17 +1,20 @@
 /**
  * This file is part of the MDXCalculator project https://github.com/bobboteck/MDXCalculator
  */
-
 let qsoData = [];
-let rulesConfig = GetRulesConfig();
+let rulesConfig = {};
 
-/***********************
- * Add Events listener *
- ***********************/
-document.getElementById("fileInput").addEventListener("change", onChangeFileSelection);
-document.getElementById("yearSelect").addEventListener("change", onChangeYearSelect);
-document.getElementById("modeSelect").addEventListener("change", onChangeModeSelect);
-document.getElementById("btnElabora").addEventListener("click", onClickElabora);
+init();
+
+async function init()
+{
+    rulesConfig = await GetRulesConfig();
+    // Add Events listener
+    document.getElementById("fileInput").addEventListener("change", onChangeFileSelection);
+    document.getElementById("yearSelect").addEventListener("change", onChangeYearSelect);
+    document.getElementById("modeSelect").addEventListener("change", onChangeModeSelect);
+    document.getElementById("btnElabora").addEventListener("click", onClickElabora);
+}
 
 /*******************
  * Event functions *
@@ -391,7 +394,8 @@ function GetRulesConfig()
 {
     if(window.location.protocol === "file:")
     {
-        return {
+        return Promise.resolve(
+        {
             "years": 
             [
                 {
@@ -410,7 +414,7 @@ function GetRulesConfig()
                     
                 }
             ]
-        };
+        });
     }
     else
     {
