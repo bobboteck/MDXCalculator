@@ -31,7 +31,7 @@ function onChangeFileSelection(event)
     // Validate file existence and type
     if(!file)
     {
-        ShowMessage("No file selected. Please choose a file.", "error");
+        ShowMessage("No file selected. Please choose a file.", "danger");
         return;
     }
 
@@ -61,7 +61,7 @@ function onChangeFileSelection(event)
 
     reader.onerror = () =>
     {
-        ShowMessage("Errore leggendo il file, riprovare.", "error");
+        ShowMessage("Errore leggendo il file, riprovare.", "danger");
     };
   
     reader.readAsText(file);
@@ -95,7 +95,7 @@ function onChangeYearSelect(event)
     }
     else
     {
-        ShowMessage("Non sono definite regole per l'anno " + yearSelect.value, "alert");
+        ShowMessage("Non sono definite regole per l'anno " + yearSelect.value, "warning");
         // Enable the dropdown to the selection of Maratone Rule mode
         modeSelect.disabled = true;
     }
@@ -236,8 +236,35 @@ function onClickElabora()
  */
 function ShowMessage(message, type)
 {
-    //TODO: Change alert with toast
-    alert(message);
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    let messageIcon = "";
+
+    switch (type)
+    {
+        case "warning":
+            messageIcon = "bi-exclamation-diamond-fill";
+            break;
+        case "danger":
+            messageIcon = "bi-exclamation-triangle-fill";
+            break;
+        case "success":
+            messageIcon = "bi-check-circle-fill";
+            break;
+        default:
+            messageIcon = "bi-info-circle-fill";
+            break;
+    }
+
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `<div style="float: left; padding-right:15px"><i class="bi ${messageIcon} flex-shrink-0 me-2"></i></div>`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+    ].join('');
+
+    alertPlaceholder.append(wrapper);
 }
 
 /**
