@@ -18,6 +18,7 @@ header {
 
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 /*.form-section, .tables-section {
     flex: 1;
