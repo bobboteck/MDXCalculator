@@ -3,12 +3,16 @@
  */
 let qsoData = [];
 let rulesConfig = {};
+let dxccEntities = [];
 
 init();
 
 async function init()
 {
-    rulesConfig = await GetRulesConfig();
+    // Read rules config file
+    rulesConfig = await ReadRulesConfig();
+    // Read dxcc entity file
+    dxccEntities = await ReadDxccEntities();
     // Add Events listener
     document.getElementById("fileInput").addEventListener("change", onChangeFileSelection);
     document.getElementById("yearSelect").addEventListener("change", onChangeYearSelect);
@@ -122,6 +126,8 @@ function onClickElabora()
     let qsoNumberCqZone = 0;
     let isAddedIq0rm = false;
 
+    document.getElementById("btnElabora").disabled = true;
+
     RemoveAllQsoFromTable();
     ResetScoreBox();
 
@@ -146,8 +152,8 @@ function onClickElabora()
                         frequency: qso.freq,
                         mode: qso.mode,
                         callSign: qso.call,
-                        country: qso.country,
-                        dxcc: 123,
+                        country: "ITALY",
+                        dxcc: new Number(qso.dxcc),
                         cqZone: qso.cqz,
                         scoreType: 0
                     };
@@ -162,8 +168,20 @@ function onClickElabora()
             }
             else
             {
-                // Check if maratonQso contains country or dxcc(TODO:...), if not add it
-                const isCountryExist = maratonQso.some(q => q.country === qso.country && q.scoreType === 1);
+                let currentQsoCountry = "";
+                if(qso.country !== undefined)
+                {
+                    currentQsoCountry = qso.country;
+                }
+                else
+                {
+                    currentQsoCountry = dxccEntities.find(d=>d.entityCode === qso.dxcc);
+                    //248
+                    //currentQsoCountry = dxccEntities.find(d=>d.entityCode === 248).entityName;
+                }
+
+                // Check if maratonQso contains country or dxcc, if not add it
+                const isCountryExist = maratonQso.some(q => q.country === currentQsoCountry && q.scoreType === 1);
                 // If not contains this Country add it, otherwise check if contains CQZone
                 if(!isCountryExist)
                 {
@@ -174,8 +192,8 @@ function onClickElabora()
                         frequency: qso.freq,
                         mode: qso.mode,
                         callSign: qso.call,
-                        country: qso.country,
-                        dxcc: 123,
+                        country: currentQsoCountry,
+                        dxcc: new Number(qso.dxcc),
                         cqZone: qso.cqz,
                         scoreType: 1
                     };
@@ -201,8 +219,8 @@ function onClickElabora()
                             frequency: qso.freq,
                             mode: qso.mode,
                             callSign: qso.call,
-                            country: qso.country,
-                            dxcc: 123,
+                            country: currentQsoCountry,
+                            dxcc: new Number(qso.dxcc),
                             cqZone: qso.cqz,
                             scoreType: 2
                         };
@@ -220,8 +238,6 @@ function onClickElabora()
             qsoNumberTotal++;
         }
     });
-
-    document.getElementById("btnElabora").disabled = true;
 
     console.log("qsoNumberTotal:  ", qsoNumberTotal);
     console.log("qsoNumberCountry:  ", qsoNumberCountry);
@@ -417,7 +433,11 @@ function ResetScoreBox()
     document.getElementById("iq0rmScore").innerText = "No";
 }
 
-async function GetRulesConfig()
+/**
+ * 
+ * @returns 
+ */
+async function ReadRulesConfig()
 {
     if(window.location.protocol === "file:")
     {
@@ -454,6 +474,58 @@ async function GetRulesConfig()
             }
 
             return response.json();
+        })
+        .then(jsonData =>
+        {
+            return Promise.resolve(jsonData);
+        })
+        .catch(error => 
+        {
+            console.error('Errore:', error);
+        });
+    }
+}
+
+/**
+ * 
+ * @returns 
+ */
+async function ReadDxccEntities()
+{
+    if(window.location.protocol === "file:")
+    {
+        return Promise.resolve(
+        [
+            {
+                "entityCode": 0,
+                "entityName": "None",
+                "deleted": false
+            },
+            {
+                "entityCode": 248,
+                "entityName": "ITALY",
+                "deleted": false
+            },
+            {
+                "entityCode": 227,
+                "entityName": "FRANCE",
+                "deleted": false
+            }
+        ]);
+    }
+    else
+    {
+        return fetch("./js/dxcc.json")
+        .then(response => 
+        {
+            if (!response.ok)
+            {
+                ShowMessage("Impossibile caricare il file con la lista DXCC", "danger");
+            }
+            else
+            {
+                return response.json();
+            }
         })
         .then(jsonData =>
         {

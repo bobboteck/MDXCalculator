@@ -1,0 +1,2017 @@
+[
+    {
+        "entityCode": 0,
+        "entityName": "None",
+        "deleted": false
+    },
+    {
+        "entityCode": 1,
+        "entityName": "CANADA",
+        "deleted": false
+    },
+    {
+        "entityCode": 2,
+        "entityName": "ABU AIL IS.",
+        "deleted": true
+    },
+    {
+        "entityCode": 3,
+        "entityName": "AFGHANISTAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 4,
+        "entityName": "AGALEGA & ST. BRANDON IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 5,
+        "entityName": "ALAND IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 6,
+        "entityName": "ALASKA",
+        "deleted": false
+    },
+    {
+        "entityCode": 7,
+        "entityName": "ALBANIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 8,
+        "entityName": "ALDABRA",
+        "deleted": true
+    },
+    {
+        "entityCode": 9,
+        "entityName": "AMERICAN SAMOA",
+        "deleted": false
+    },
+    {
+        "entityCode": 10,
+        "entityName": "AMSTERDAM & ST. PAUL IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 11,
+        "entityName": "ANDAMAN & NICOBAR IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 12,
+        "entityName": "ANGUILLA",
+        "deleted": false
+    },
+    {
+        "entityCode": 13,
+        "entityName": "ANTARCTICA",
+        "deleted": false
+    },
+    {
+        "entityCode": 14,
+        "entityName": "ARMENIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 15,
+        "entityName": "ASIATIC RUSSIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 16,
+        "entityName": "NEW ZEALAND SUBANTARCTIC ISLANDS",
+        "deleted": false
+    },
+    {
+        "entityCode": 17,
+        "entityName": "AVES I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 18,
+        "entityName": "AZERBAIJAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 19,
+        "entityName": "BAJO NUEVO",
+        "deleted": true
+    },
+    {
+        "entityCode": 20,
+        "entityName": "BAKER & HOWLAND IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 21,
+        "entityName": "BALEARIC IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 22,
+        "entityName": "PALAU",
+        "deleted": false
+    },
+    {
+        "entityCode": 23,
+        "entityName": "BLENHEIM REEF",
+        "deleted": true
+    },
+    {
+        "entityCode": 24,
+        "entityName": "BOUVET",
+        "deleted": false
+    },
+    {
+        "entityCode": 25,
+        "entityName": "BRITISH NORTH BORNEO",
+        "deleted": true
+    },
+    {
+        "entityCode": 26,
+        "entityName": "BRITISH SOMALILAND",
+        "deleted": true
+    },
+    {
+        "entityCode": 27,
+        "entityName": "BELARUS",
+        "deleted": false
+    },
+    {
+        "entityCode": 28,
+        "entityName": "CANAL ZONE",
+        "deleted": true
+    },
+    {
+        "entityCode": 29,
+        "entityName": "CANARY IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 30,
+        "entityName": "CELEBE & MOLUCCA IS.",
+        "deleted": true
+    },
+    {
+        "entityCode": 31,
+        "entityName": "C. KIRIBATI (BRITISH PHOENIX IS.)",
+        "deleted": false
+    },
+    {
+        "entityCode": 32,
+        "entityName": "CEUTA & MELILLA",
+        "deleted": false
+    },
+    {
+        "entityCode": 33,
+        "entityName": "CHAGOS IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 34,
+        "entityName": "CHATHAM IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 35,
+        "entityName": "CHRISTMAS I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 36,
+        "entityName": "CLIPPERTON I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 37,
+        "entityName": "COCOS I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 38,
+        "entityName": "COCOS (KEELING) IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 39,
+        "entityName": "COMOROS",
+        "deleted": true
+    },
+    {
+        "entityCode": 40,
+        "entityName": "CRETE",
+        "deleted": false
+    },
+    {
+        "entityCode": 41,
+        "entityName": "CROZET I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 42,
+        "entityName": "DAMAO, DIU",
+        "deleted": true
+    },
+    {
+        "entityCode": 43,
+        "entityName": "DESECHEO I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 44,
+        "entityName": "DESROCHES",
+        "deleted": true
+    },
+    {
+        "entityCode": 45,
+        "entityName": "DODECANESE",
+        "deleted": false
+    },
+    {
+        "entityCode": 46,
+        "entityName": "EAST MALAYSIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 47,
+        "entityName": "EASTER I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 48,
+        "entityName": "E. KIRIBATI (LINE IS.)",
+        "deleted": false
+    },
+    {
+        "entityCode": 49,
+        "entityName": "EQUATORIAL GUINEA",
+        "deleted": false
+    },
+    {
+        "entityCode": 50,
+        "entityName": "MEXICO",
+        "deleted": false
+    },
+    {
+        "entityCode": 51,
+        "entityName": "ERITREA",
+        "deleted": false
+    },
+    {
+        "entityCode": 52,
+        "entityName": "ESTONIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 53,
+        "entityName": "ETHIOPIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 54,
+        "entityName": "EUROPEAN RUSSIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 55,
+        "entityName": "FARQUHAR",
+        "deleted": true
+    },
+    {
+        "entityCode": 56,
+        "entityName": "FERNANDO DE NORONHA",
+        "deleted": false
+    },
+    {
+        "entityCode": 57,
+        "entityName": "FRENCH EQUATORIAL AFRICA",
+        "deleted": true
+    },
+    {
+        "entityCode": 58,
+        "entityName": "FRENCH INDO-CHINA",
+        "deleted": true
+    },
+    {
+        "entityCode": 59,
+        "entityName": "FRENCH WEST AFRICA",
+        "deleted": true
+    },
+    {
+        "entityCode": 60,
+        "entityName": "BAHAMAS",
+        "deleted": false
+    },
+    {
+        "entityCode": 61,
+        "entityName": "FRANZ JOSEF LAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 62,
+        "entityName": "BARBADOS",
+        "deleted": false
+    },
+    {
+        "entityCode": 63,
+        "entityName": "FRENCH GUIANA",
+        "deleted": false
+    },
+    {
+        "entityCode": 64,
+        "entityName": "BERMUDA",
+        "deleted": false
+    },
+    {
+        "entityCode": 65,
+        "entityName": "BRITISH VIRGIN IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 66,
+        "entityName": "BELIZE",
+        "deleted": false
+    },
+    {
+        "entityCode": 67,
+        "entityName": "FRENCH INDIA",
+        "deleted": true
+    },
+    {
+        "entityCode": 68,
+        "entityName": "KUWAIT/SAUDI ARABIA NEUTRAL ZONE",
+        "deleted": true
+    },
+    {
+        "entityCode": 69,
+        "entityName": "CAYMAN IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 70,
+        "entityName": "CUBA",
+        "deleted": false
+    },
+    {
+        "entityCode": 71,
+        "entityName": "GALAPAGOS IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 72,
+        "entityName": "DOMINICAN REPUBLIC",
+        "deleted": false
+    },
+    {
+        "entityCode": 74,
+        "entityName": "EL SALVADOR",
+        "deleted": false
+    },
+    {
+        "entityCode": 75,
+        "entityName": "GEORGIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 76,
+        "entityName": "GUATEMALA",
+        "deleted": false
+    },
+    {
+        "entityCode": 77,
+        "entityName": "GRENADA",
+        "deleted": false
+    },
+    {
+        "entityCode": 78,
+        "entityName": "HAITI",
+        "deleted": false
+    },
+    {
+        "entityCode": 79,
+        "entityName": "GUADELOUPE",
+        "deleted": false
+    },
+    {
+        "entityCode": 80,
+        "entityName": "HONDURAS",
+        "deleted": false
+    },
+    {
+        "entityCode": 81,
+        "entityName": "GERMANY",
+        "deleted": true
+    },
+    {
+        "entityCode": 82,
+        "entityName": "JAMAICA",
+        "deleted": false
+    },
+    {
+        "entityCode": 84,
+        "entityName": "MARTINIQUE",
+        "deleted": false
+    },
+    {
+        "entityCode": 85,
+        "entityName": "BONAIRE, CURACAO",
+        "deleted": true
+    },
+    {
+        "entityCode": 86,
+        "entityName": "NICARAGUA",
+        "deleted": false
+    },
+    {
+        "entityCode": 88,
+        "entityName": "PANAMA",
+        "deleted": false
+    },
+    {
+        "entityCode": 89,
+        "entityName": "TURKS & CAICOS IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 90,
+        "entityName": "TRINIDAD & TOBAGO",
+        "deleted": false
+    },
+    {
+        "entityCode": 91,
+        "entityName": "ARUBA",
+        "deleted": false
+    },
+    {
+        "entityCode": 93,
+        "entityName": "GEYSER REEF",
+        "deleted": true
+    },
+    {
+        "entityCode": 94,
+        "entityName": "ANTIGUA & BARBUDA",
+        "deleted": false
+    },
+    {
+        "entityCode": 95,
+        "entityName": "DOMINICA",
+        "deleted": false
+    },
+    {
+        "entityCode": 96,
+        "entityName": "MONTSERRAT",
+        "deleted": false
+    },
+    {
+        "entityCode": 97,
+        "entityName": "ST. LUCIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 98,
+        "entityName": "ST. VINCENT",
+        "deleted": false
+    },
+    {
+        "entityCode": 99,
+        "entityName": "GLORIOSO IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 100,
+        "entityName": "ARGENTINA",
+        "deleted": false
+    },
+    {
+        "entityCode": 101,
+        "entityName": "GOA",
+        "deleted": true
+    },
+    {
+        "entityCode": 102,
+        "entityName": "GOLD COAST, TOGOLAND",
+        "deleted": true
+    },
+    {
+        "entityCode": 103,
+        "entityName": "GUAM",
+        "deleted": false
+    },
+    {
+        "entityCode": 104,
+        "entityName": "BOLIVIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 105,
+        "entityName": "GUANTANAMO BAY",
+        "deleted": false
+    },
+    {
+        "entityCode": 106,
+        "entityName": "GUERNSEY",
+        "deleted": false
+    },
+    {
+        "entityCode": 107,
+        "entityName": "GUINEA",
+        "deleted": false
+    },
+    {
+        "entityCode": 108,
+        "entityName": "BRAZIL",
+        "deleted": false
+    },
+    {
+        "entityCode": 109,
+        "entityName": "GUINEA-BISSAU",
+        "deleted": false
+    },
+    {
+        "entityCode": 110,
+        "entityName": "HAWAII",
+        "deleted": false
+    },
+    {
+        "entityCode": 111,
+        "entityName": "HEARD I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 112,
+        "entityName": "CHILE",
+        "deleted": false
+    },
+    {
+        "entityCode": 113,
+        "entityName": "IFNI",
+        "deleted": true
+    },
+    {
+        "entityCode": 114,
+        "entityName": "ISLE OF MAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 115,
+        "entityName": "ITALIAN SOMALILAND",
+        "deleted": true
+    },
+    {
+        "entityCode": 116,
+        "entityName": "COLOMBIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 117,
+        "entityName": "ITU HQ",
+        "deleted": false
+    },
+    {
+        "entityCode": 118,
+        "entityName": "JAN MAYEN",
+        "deleted": false
+    },
+    {
+        "entityCode": 119,
+        "entityName": "JAVA",
+        "deleted": true
+    },
+    {
+        "entityCode": 120,
+        "entityName": "ECUADOR",
+        "deleted": false
+    },
+    {
+        "entityCode": 122,
+        "entityName": "JERSEY",
+        "deleted": false
+    },
+    {
+        "entityCode": 123,
+        "entityName": "JOHNSTON I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 124,
+        "entityName": "JUAN DE NOVA, EUROPA",
+        "deleted": false
+    },
+    {
+        "entityCode": 125,
+        "entityName": "JUAN FERNANDEZ IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 126,
+        "entityName": "KALININGRAD",
+        "deleted": false
+    },
+    {
+        "entityCode": 127,
+        "entityName": "KAMARAN IS.",
+        "deleted": true
+    },
+    {
+        "entityCode": 128,
+        "entityName": "KARELO-FINNISH REPUBLIC",
+        "deleted": true
+    },
+    {
+        "entityCode": 129,
+        "entityName": "GUYANA",
+        "deleted": false
+    },
+    {
+        "entityCode": 130,
+        "entityName": "KAZAKHSTAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 131,
+        "entityName": "KERGUELEN IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 132,
+        "entityName": "PARAGUAY",
+        "deleted": false
+    },
+    {
+        "entityCode": 133,
+        "entityName": "KERMADEC IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 134,
+        "entityName": "KINGMAN REEF",
+        "deleted": true
+    },
+    {
+        "entityCode": 135,
+        "entityName": "KYRGYZSTAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 136,
+        "entityName": "PERU",
+        "deleted": false
+    },
+    {
+        "entityCode": 137,
+        "entityName": "REPUBLIC OF KOREA",
+        "deleted": false
+    },
+    {
+        "entityCode": 138,
+        "entityName": "KURE I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 139,
+        "entityName": "KURIA MURIA I.",
+        "deleted": true
+    },
+    {
+        "entityCode": 140,
+        "entityName": "SURINAME",
+        "deleted": false
+    },
+    {
+        "entityCode": 141,
+        "entityName": "FALKLAND IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 142,
+        "entityName": "LAKSHADWEEP IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 143,
+        "entityName": "LAOS",
+        "deleted": false
+    },
+    {
+        "entityCode": 144,
+        "entityName": "URUGUAY",
+        "deleted": false
+    },
+    {
+        "entityCode": 145,
+        "entityName": "LATVIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 146,
+        "entityName": "LITHUANIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 147,
+        "entityName": "LORD HOWE I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 148,
+        "entityName": "VENEZUELA",
+        "deleted": false
+    },
+    {
+        "entityCode": 149,
+        "entityName": "AZORES",
+        "deleted": false
+    },
+    {
+        "entityCode": 150,
+        "entityName": "AUSTRALIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 151,
+        "entityName": "MALYJ VYSOTSKIJ I.",
+        "deleted": true
+    },
+    {
+        "entityCode": 152,
+        "entityName": "MACAO",
+        "deleted": false
+    },
+    {
+        "entityCode": 153,
+        "entityName": "MACQUARIE I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 154,
+        "entityName": "YEMEN ARAB REPUBLIC",
+        "deleted": true
+    },
+    {
+        "entityCode": 155,
+        "entityName": "MALAYA",
+        "deleted": true
+    },
+    {
+        "entityCode": 157,
+        "entityName": "NAURU",
+        "deleted": false
+    },
+    {
+        "entityCode": 158,
+        "entityName": "VANUATU",
+        "deleted": false
+    },
+    {
+        "entityCode": 159,
+        "entityName": "MALDIVES",
+        "deleted": false
+    },
+    {
+        "entityCode": 160,
+        "entityName": "TONGA",
+        "deleted": false
+    },
+    {
+        "entityCode": 161,
+        "entityName": "MALPELO I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 162,
+        "entityName": "NEW CALEDONIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 163,
+        "entityName": "PAPUA NEW GUINEA",
+        "deleted": false
+    },
+    {
+        "entityCode": 164,
+        "entityName": "MANCHURIA",
+        "deleted": true
+    },
+    {
+        "entityCode": 165,
+        "entityName": "MAURITIUS",
+        "deleted": false
+    },
+    {
+        "entityCode": 166,
+        "entityName": "MARIANA IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 167,
+        "entityName": "MARKET REEF",
+        "deleted": false
+    },
+    {
+        "entityCode": 168,
+        "entityName": "MARSHALL IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 169,
+        "entityName": "MAYOTTE",
+        "deleted": false
+    },
+    {
+        "entityCode": 170,
+        "entityName": "NEW ZEALAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 171,
+        "entityName": "MELLISH REEF",
+        "deleted": false
+    },
+    {
+        "entityCode": 172,
+        "entityName": "PITCAIRN I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 173,
+        "entityName": "MICRONESIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 174,
+        "entityName": "MIDWAY I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 175,
+        "entityName": "FRENCH POLYNESIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 176,
+        "entityName": "FIJI",
+        "deleted": false
+    },
+    {
+        "entityCode": 177,
+        "entityName": "MINAMI TORISHIMA",
+        "deleted": false
+    },
+    {
+        "entityCode": 178,
+        "entityName": "MINERVA REEF",
+        "deleted": true
+    },
+    {
+        "entityCode": 179,
+        "entityName": "MOLDOVA",
+        "deleted": false
+    },
+    {
+        "entityCode": 180,
+        "entityName": "MOUNT ATHOS",
+        "deleted": false
+    },
+    {
+        "entityCode": 181,
+        "entityName": "MOZAMBIQUE",
+        "deleted": false
+    },
+    {
+        "entityCode": 182,
+        "entityName": "NAVASSA I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 183,
+        "entityName": "NETHERLANDS BORNEO",
+        "deleted": true
+    },
+    {
+        "entityCode": 184,
+        "entityName": "NETHERLANDS NEW GUINEA",
+        "deleted": true
+    },
+    {
+        "entityCode": 185,
+        "entityName": "SOLOMON IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 186,
+        "entityName": "NEWFOUNDLAND, LABRADOR",
+        "deleted": true
+    },
+    {
+        "entityCode": 187,
+        "entityName": "NIGER",
+        "deleted": false
+    },
+    {
+        "entityCode": 188,
+        "entityName": "NIUE",
+        "deleted": false
+    },
+    {
+        "entityCode": 189,
+        "entityName": "NORFOLK I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 190,
+        "entityName": "SAMOA",
+        "deleted": false
+    },
+    {
+        "entityCode": 191,
+        "entityName": "NORTH COOK IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 192,
+        "entityName": "OGASAWARA",
+        "deleted": false
+    },
+    {
+        "entityCode": 193,
+        "entityName": "OKINAWA (RYUKYU IS.)",
+        "deleted": true
+    },
+    {
+        "entityCode": 194,
+        "entityName": "OKINO TORI-SHIMA",
+        "deleted": true
+    },
+    {
+        "entityCode": 195,
+        "entityName": "ANNOBON I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 196,
+        "entityName": "PALESTINE",
+        "deleted": true
+    },
+    {
+        "entityCode": 197,
+        "entityName": "PALMYRA & JARVIS IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 198,
+        "entityName": "PAPUA TERRITORY",
+        "deleted": true
+    },
+    {
+        "entityCode": 199,
+        "entityName": "PETER 1 I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 200,
+        "entityName": "PORTUGUESE TIMOR",
+        "deleted": true
+    },
+    {
+        "entityCode": 201,
+        "entityName": "PRINCE EDWARD & MARION IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 202,
+        "entityName": "PUERTO RICO",
+        "deleted": false
+    },
+    {
+        "entityCode": 203,
+        "entityName": "ANDORRA",
+        "deleted": false
+    },
+    {
+        "entityCode": 204,
+        "entityName": "REVILLAGIGEDO",
+        "deleted": false
+    },
+    {
+        "entityCode": 205,
+        "entityName": "ASCENSION I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 206,
+        "entityName": "AUSTRIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 207,
+        "entityName": "RODRIGUES I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 208,
+        "entityName": "RUANDA-URUNDI",
+        "deleted": true
+    },
+    {
+        "entityCode": 209,
+        "entityName": "BELGIUM",
+        "deleted": false
+    },
+    {
+        "entityCode": 210,
+        "entityName": "SAAR",
+        "deleted": true
+    },
+    {
+        "entityCode": 211,
+        "entityName": "SABLE I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 212,
+        "entityName": "BULGARIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 213,
+        "entityName": "SAINT MARTIN",
+        "deleted": false
+    },
+    {
+        "entityCode": 214,
+        "entityName": "CORSICA",
+        "deleted": false
+    },
+    {
+        "entityCode": 215,
+        "entityName": "CYPRUS",
+        "deleted": false
+    },
+    {
+        "entityCode": 216,
+        "entityName": "SAN ANDRES & PROVIDENCIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 217,
+        "entityName": "SAN FELIX & SAN AMBROSIO",
+        "deleted": false
+    },
+    {
+        "entityCode": 218,
+        "entityName": "CZECHOSLOVAKIA",
+        "deleted": true
+    },
+    {
+        "entityCode": 219,
+        "entityName": "SAO TOME & PRINCIPE",
+        "deleted": false
+    },
+    {
+        "entityCode": 220,
+        "entityName": "SARAWAK",
+        "deleted": true
+    },
+    {
+        "entityCode": 221,
+        "entityName": "DENMARK",
+        "deleted": false
+    },
+    {
+        "entityCode": 222,
+        "entityName": "FAROE IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 223,
+        "entityName": "ENGLAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 224,
+        "entityName": "FINLAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 225,
+        "entityName": "SARDINIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 226,
+        "entityName": "SAUDI ARABIA/IRAQ NEUTRAL ZONE",
+        "deleted": true
+    },
+    {
+        "entityCode": 227,
+        "entityName": "FRANCE",
+        "deleted": false
+    },
+    {
+        "entityCode": 228,
+        "entityName": "SERRANA BANK & RONCADOR CAY",
+        "deleted": true
+    },
+    {
+        "entityCode": 229,
+        "entityName": "GERMAN DEMOCRATIC REPUBLIC",
+        "deleted": true
+    },
+    {
+        "entityCode": 230,
+        "entityName": "FEDERAL REPUBLIC OF GERMANY",
+        "deleted": false
+    },
+    {
+        "entityCode": 231,
+        "entityName": "SIKKIM",
+        "deleted": true
+    },
+    {
+        "entityCode": 232,
+        "entityName": "SOMALIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 233,
+        "entityName": "GIBRALTAR",
+        "deleted": false
+    },
+    {
+        "entityCode": 234,
+        "entityName": "SOUTH COOK IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 235,
+        "entityName": "SOUTH GEORGIA I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 236,
+        "entityName": "GREECE",
+        "deleted": false
+    },
+    {
+        "entityCode": 237,
+        "entityName": "GREENLAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 238,
+        "entityName": "SOUTH ORKNEY IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 239,
+        "entityName": "HUNGARY",
+        "deleted": false
+    },
+    {
+        "entityCode": 240,
+        "entityName": "SOUTH SANDWICH IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 241,
+        "entityName": "SOUTH SHETLAND IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 242,
+        "entityName": "ICELAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 243,
+        "entityName": "PEOPLE'S DEMOCRATIC REP. OF YEMEN",
+        "deleted": true
+    },
+    {
+        "entityCode": 244,
+        "entityName": "SOUTHERN SUDAN",
+        "deleted": true
+    },
+    {
+        "entityCode": 245,
+        "entityName": "IRELAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 246,
+        "entityName": "SOVEREIGN MILITARY ORDER OF MALTA",
+        "deleted": false
+    },
+    {
+        "entityCode": 247,
+        "entityName": "SPRATLY IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 248,
+        "entityName": "ITALY",
+        "deleted": false
+    },
+    {
+        "entityCode": 249,
+        "entityName": "ST. KITTS & NEVIS",
+        "deleted": false
+    },
+    {
+        "entityCode": 250,
+        "entityName": "ST. HELENA",
+        "deleted": false
+    },
+    {
+        "entityCode": 251,
+        "entityName": "LIECHTENSTEIN",
+        "deleted": false
+    },
+    {
+        "entityCode": 252,
+        "entityName": "ST. PAUL I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 253,
+        "entityName": "ST. PETER & ST. PAUL ROCKS",
+        "deleted": false
+    },
+    {
+        "entityCode": 254,
+        "entityName": "LUXEMBOURG",
+        "deleted": false
+    },
+    {
+        "entityCode": 255,
+        "entityName": "ST. MAARTEN, SABA, ST. EUSTATIUS",
+        "deleted": true
+    },
+    {
+        "entityCode": 256,
+        "entityName": "MADEIRA IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 257,
+        "entityName": "MALTA",
+        "deleted": false
+    },
+    {
+        "entityCode": 258,
+        "entityName": "SUMATRA",
+        "deleted": true
+    },
+    {
+        "entityCode": 259,
+        "entityName": "SVALBARD",
+        "deleted": false
+    },
+    {
+        "entityCode": 260,
+        "entityName": "MONACO",
+        "deleted": false
+    },
+    {
+        "entityCode": 261,
+        "entityName": "SWAN IS.",
+        "deleted": true
+    },
+    {
+        "entityCode": 262,
+        "entityName": "TAJIKISTAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 263,
+        "entityName": "NETHERLANDS",
+        "deleted": false
+    },
+    {
+        "entityCode": 264,
+        "entityName": "TANGIER",
+        "deleted": true
+    },
+    {
+        "entityCode": 265,
+        "entityName": "NORTHERN IRELAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 266,
+        "entityName": "NORWAY",
+        "deleted": false
+    },
+    {
+        "entityCode": 267,
+        "entityName": "TERRITORY OF NEW GUINEA",
+        "deleted": true
+    },
+    {
+        "entityCode": 268,
+        "entityName": "TIBET",
+        "deleted": true
+    },
+    {
+        "entityCode": 269,
+        "entityName": "POLAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 270,
+        "entityName": "TOKELAU IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 271,
+        "entityName": "TRIESTE",
+        "deleted": true
+    },
+    {
+        "entityCode": 272,
+        "entityName": "PORTUGAL",
+        "deleted": false
+    },
+    {
+        "entityCode": 273,
+        "entityName": "TRINDADE & MARTIM VAZ IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 274,
+        "entityName": "TRISTAN DA CUNHA & GOUGH I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 275,
+        "entityName": "ROMANIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 276,
+        "entityName": "TROMELIN I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 277,
+        "entityName": "ST. PIERRE & MIQUELON",
+        "deleted": false
+    },
+    {
+        "entityCode": 278,
+        "entityName": "SAN MARINO",
+        "deleted": false
+    },
+    {
+        "entityCode": 279,
+        "entityName": "SCOTLAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 280,
+        "entityName": "TURKMENISTAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 281,
+        "entityName": "SPAIN",
+        "deleted": false
+    },
+    {
+        "entityCode": 282,
+        "entityName": "TUVALU",
+        "deleted": false
+    },
+    {
+        "entityCode": 283,
+        "entityName": "UK SOVEREIGN BASE AREAS ON CYPRUS",
+        "deleted": false
+    },
+    {
+        "entityCode": 284,
+        "entityName": "SWEDEN",
+        "deleted": false
+    },
+    {
+        "entityCode": 285,
+        "entityName": "VIRGIN IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 286,
+        "entityName": "UGANDA",
+        "deleted": false
+    },
+    {
+        "entityCode": 287,
+        "entityName": "SWITZERLAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 288,
+        "entityName": "UKRAINE",
+        "deleted": false
+    },
+    {
+        "entityCode": 289,
+        "entityName": "UNITED NATIONS HQ",
+        "deleted": false
+    },
+    {
+        "entityCode": 291,
+        "entityName": "UNITED STATES OF AMERICA",
+        "deleted": false
+    },
+    {
+        "entityCode": 292,
+        "entityName": "UZBEKISTAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 293,
+        "entityName": "VIET NAM",
+        "deleted": false
+    },
+    {
+        "entityCode": 294,
+        "entityName": "WALES",
+        "deleted": false
+    },
+    {
+        "entityCode": 295,
+        "entityName": "VATICAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 296,
+        "entityName": "SERBIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 297,
+        "entityName": "WAKE I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 298,
+        "entityName": "WALLIS & FUTUNA IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 299,
+        "entityName": "WEST MALAYSIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 301,
+        "entityName": "W. KIRIBATI (GILBERT IS. )",
+        "deleted": false
+    },
+    {
+        "entityCode": 302,
+        "entityName": "WESTERN SAHARA",
+        "deleted": false
+    },
+    {
+        "entityCode": 303,
+        "entityName": "WILLIS I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 304,
+        "entityName": "BAHRAIN",
+        "deleted": false
+    },
+    {
+        "entityCode": 305,
+        "entityName": "BANGLADESH",
+        "deleted": false
+    },
+    {
+        "entityCode": 306,
+        "entityName": "BHUTAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 307,
+        "entityName": "ZANZIBAR",
+        "deleted": true
+    },
+    {
+        "entityCode": 308,
+        "entityName": "COSTA RICA",
+        "deleted": false
+    },
+    {
+        "entityCode": 309,
+        "entityName": "MYANMAR",
+        "deleted": false
+    },
+    {
+        "entityCode": 312,
+        "entityName": "CAMBODIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 315,
+        "entityName": "SRI LANKA",
+        "deleted": false
+    },
+    {
+        "entityCode": 318,
+        "entityName": "CHINA",
+        "deleted": false
+    },
+    {
+        "entityCode": 321,
+        "entityName": "HONG KONG",
+        "deleted": false
+    },
+    {
+        "entityCode": 324,
+        "entityName": "INDIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 327,
+        "entityName": "INDONESIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 330,
+        "entityName": "IRAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 333,
+        "entityName": "IRAQ",
+        "deleted": false
+    },
+    {
+        "entityCode": 336,
+        "entityName": "ISRAEL",
+        "deleted": false
+    },
+    {
+        "entityCode": 339,
+        "entityName": "JAPAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 342,
+        "entityName": "JORDAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 344,
+        "entityName": "DEMOCRATIC PEOPLE'S REP. OF KOREA",
+        "deleted": false
+    },
+    {
+        "entityCode": 345,
+        "entityName": "BRUNEI DARUSSALAM",
+        "deleted": false
+    },
+    {
+        "entityCode": 348,
+        "entityName": "KUWAIT",
+        "deleted": false
+    },
+    {
+        "entityCode": 354,
+        "entityName": "LEBANON",
+        "deleted": false
+    },
+    {
+        "entityCode": 363,
+        "entityName": "MONGOLIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 369,
+        "entityName": "NEPAL",
+        "deleted": false
+    },
+    {
+        "entityCode": 370,
+        "entityName": "OMAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 372,
+        "entityName": "PAKISTAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 375,
+        "entityName": "PHILIPPINES",
+        "deleted": false
+    },
+    {
+        "entityCode": 376,
+        "entityName": "QATAR",
+        "deleted": false
+    },
+    {
+        "entityCode": 378,
+        "entityName": "SAUDI ARABIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 379,
+        "entityName": "SEYCHELLES",
+        "deleted": false
+    },
+    {
+        "entityCode": 381,
+        "entityName": "SINGAPORE",
+        "deleted": false
+    },
+    {
+        "entityCode": 382,
+        "entityName": "DJIBOUTI",
+        "deleted": false
+    },
+    {
+        "entityCode": 384,
+        "entityName": "SYRIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 386,
+        "entityName": "TAIWAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 387,
+        "entityName": "THAILAND",
+        "deleted": false
+    },
+    {
+        "entityCode": 390,
+        "entityName": "TURKEY",
+        "deleted": false
+    },
+    {
+        "entityCode": 391,
+        "entityName": "UNITED ARAB EMIRATES",
+        "deleted": false
+    },
+    {
+        "entityCode": 400,
+        "entityName": "ALGERIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 401,
+        "entityName": "ANGOLA",
+        "deleted": false
+    },
+    {
+        "entityCode": 402,
+        "entityName": "BOTSWANA",
+        "deleted": false
+    },
+    {
+        "entityCode": 404,
+        "entityName": "BURUNDI",
+        "deleted": false
+    },
+    {
+        "entityCode": 406,
+        "entityName": "CAMEROON",
+        "deleted": false
+    },
+    {
+        "entityCode": 408,
+        "entityName": "CENTRAL AFRICA",
+        "deleted": false
+    },
+    {
+        "entityCode": 409,
+        "entityName": "CAPE VERDE",
+        "deleted": false
+    },
+    {
+        "entityCode": 410,
+        "entityName": "CHAD",
+        "deleted": false
+    },
+    {
+        "entityCode": 411,
+        "entityName": "COMOROS",
+        "deleted": false
+    },
+    {
+        "entityCode": 412,
+        "entityName": "REPUBLIC OF THE CONGO",
+        "deleted": false
+    },
+    {
+        "entityCode": 414,
+        "entityName": "DEMOCRATIC REPUBLIC OF THE CONGO",
+        "deleted": false
+    },
+    {
+        "entityCode": 416,
+        "entityName": "BENIN",
+        "deleted": false
+    },
+    {
+        "entityCode": 420,
+        "entityName": "GABON",
+        "deleted": false
+    },
+    {
+        "entityCode": 422,
+        "entityName": "THE GAMBIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 424,
+        "entityName": "GHANA",
+        "deleted": false
+    },
+    {
+        "entityCode": 428,
+        "entityName": "COTE D'IVOIRE",
+        "deleted": false
+    },
+    {
+        "entityCode": 430,
+        "entityName": "KENYA",
+        "deleted": false
+    },
+    {
+        "entityCode": 432,
+        "entityName": "LESOTHO",
+        "deleted": false
+    },
+    {
+        "entityCode": 434,
+        "entityName": "LIBERIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 436,
+        "entityName": "LIBYA",
+        "deleted": false
+    },
+    {
+        "entityCode": 438,
+        "entityName": "MADAGASCAR",
+        "deleted": false
+    },
+    {
+        "entityCode": 440,
+        "entityName": "MALAWI",
+        "deleted": false
+    },
+    {
+        "entityCode": 442,
+        "entityName": "MALI",
+        "deleted": false
+    },
+    {
+        "entityCode": 444,
+        "entityName": "MAURITANIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 446,
+        "entityName": "MOROCCO",
+        "deleted": false
+    },
+    {
+        "entityCode": 450,
+        "entityName": "NIGERIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 452,
+        "entityName": "ZIMBABWE",
+        "deleted": false
+    },
+    {
+        "entityCode": 453,
+        "entityName": "REUNION I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 454,
+        "entityName": "RWANDA",
+        "deleted": false
+    },
+    {
+        "entityCode": 456,
+        "entityName": "SENEGAL",
+        "deleted": false
+    },
+    {
+        "entityCode": 458,
+        "entityName": "SIERRA LEONE",
+        "deleted": false
+    },
+    {
+        "entityCode": 460,
+        "entityName": "ROTUMA I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 462,
+        "entityName": "REPUBLIC OF SOUTH AFRICA",
+        "deleted": false
+    },
+    {
+        "entityCode": 464,
+        "entityName": "NAMIBIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 466,
+        "entityName": "SUDAN",
+        "deleted": false
+    },
+    {
+        "entityCode": 468,
+        "entityName": "KINGDOM OF ESWATINI",
+        "deleted": false
+    },
+    {
+        "entityCode": 470,
+        "entityName": "TANZANIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 474,
+        "entityName": "TUNISIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 478,
+        "entityName": "EGYPT",
+        "deleted": false
+    },
+    {
+        "entityCode": 480,
+        "entityName": "BURKINA FASO",
+        "deleted": false
+    },
+    {
+        "entityCode": 482,
+        "entityName": "ZAMBIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 483,
+        "entityName": "TOGO",
+        "deleted": false
+    },
+    {
+        "entityCode": 488,
+        "entityName": "WALVIS BAY",
+        "deleted": true
+    },
+    {
+        "entityCode": 489,
+        "entityName": "CONWAY REEF",
+        "deleted": false
+    },
+    {
+        "entityCode": 490,
+        "entityName": "BANABA I. (OCEAN I.)",
+        "deleted": false
+    },
+    {
+        "entityCode": 492,
+        "entityName": "YEMEN",
+        "deleted": false
+    },
+    {
+        "entityCode": 493,
+        "entityName": "PENGUIN IS.",
+        "deleted": true
+    },
+    {
+        "entityCode": 497,
+        "entityName": "CROATIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 499,
+        "entityName": "SLOVENIA",
+        "deleted": false
+    },
+    {
+        "entityCode": 501,
+        "entityName": "BOSNIA-HERZEGOVINA",
+        "deleted": false
+    },
+    {
+        "entityCode": 502,
+        "entityName": "NORTH MACEDONIA (REPUBLIC OF)",
+        "deleted": false
+    },
+    {
+        "entityCode": 503,
+        "entityName": "CZECH REPUBLIC",
+        "deleted": false
+    },
+    {
+        "entityCode": 504,
+        "entityName": "SLOVAK REPUBLIC",
+        "deleted": false
+    },
+    {
+        "entityCode": 505,
+        "entityName": "PRATAS I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 506,
+        "entityName": "SCARBOROUGH REEF",
+        "deleted": false
+    },
+    {
+        "entityCode": 507,
+        "entityName": "TEMOTU PROVINCE",
+        "deleted": false
+    },
+    {
+        "entityCode": 508,
+        "entityName": "AUSTRAL I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 509,
+        "entityName": "MARQUESAS IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 510,
+        "entityName": "PALESTINE",
+        "deleted": false
+    },
+    {
+        "entityCode": 511,
+        "entityName": "TIMOR-LESTE",
+        "deleted": false
+    },
+    {
+        "entityCode": 512,
+        "entityName": "CHESTERFIELD IS.",
+        "deleted": false
+    },
+    {
+        "entityCode": 513,
+        "entityName": "DUCIE I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 514,
+        "entityName": "MONTENEGRO",
+        "deleted": false
+    },
+    {
+        "entityCode": 515,
+        "entityName": "SWAINS I.",
+        "deleted": false
+    },
+    {
+        "entityCode": 516,
+        "entityName": "SAINT BARTHELEMY",
+        "deleted": false
+    },
+    {
+        "entityCode": 517,
+        "entityName": "CURACAO",
+        "deleted": false
+    },
+    {
+        "entityCode": 518,
+        "entityName": "SINT MAARTEN",
+        "deleted": false
+    },
+    {
+        "entityCode": 519,
+        "entityName": "SABA & ST. EUSTATIUS",
+        "deleted": false
+    },
+    {
+        "entityCode": 520,
+        "entityName": "BONAIRE",
+        "deleted": false
+    },
+    {
+        "entityCode": 521,
+        "entityName": "SOUTH SUDAN (REPUBLIC OF)",
+        "deleted": false
+    },
+    {
+        "entityCode": 522,
+        "entityName": "REPUBLIC OF KOSOVO",
+        "deleted": false
+    }
+]
