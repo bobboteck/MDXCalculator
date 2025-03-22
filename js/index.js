@@ -162,8 +162,8 @@ function onClickElabora()
                     isAddedIq0rm = true;
 
                     document.getElementById("iq0rmScore").innerText = "Yes";
-                    // Add qso to talbe
-                    AddQsoToTable(qso, 0);
+                    // // Add qso to talbe
+                    // AddQsoToTable(qso, 0);
                 }
             }
             else
@@ -175,9 +175,7 @@ function onClickElabora()
                 }
                 else
                 {
-                    currentQsoCountry = dxccEntities.find(d=>d.entityCode === qso.dxcc);
-                    //248
-                    //currentQsoCountry = dxccEntities.find(d=>d.entityCode === 248).entityName;
+                    currentQsoCountry = dxccEntities.find(d=>d.entityCode === parseInt(qso.dxcc)).entityName;
                 }
 
                 // Check if maratonQso contains country or dxcc, if not add it
@@ -202,8 +200,8 @@ function onClickElabora()
                     // Update counter
                     qsoNumberCountry++;
                     document.getElementById("contryScore").innerText = qsoNumberCountry;
-                    // Add qso to talbe
-                    AddQsoToTable(qso, 1);
+                    // // Add qso to talbe
+                    // AddQsoToTable(qso, 1);
                 }
                 else
                 {
@@ -229,14 +227,20 @@ function onClickElabora()
                         // Update counter
                         qsoNumberCqZone++;
                         document.getElementById("cqZoneScore").innerText = qsoNumberCqZone;
-                        // Add qso to tale
-                        AddQsoToTable(qso, 2);
+                        // // Add qso to tale
+                        // AddQsoToTable(qso, 2);
                     }
                 }
             }
 
             qsoNumberTotal++;
         }
+    });
+
+
+    maratonQso.forEach(qso =>
+    {
+        AddQsoToTable(qso);
     });
 
     console.log("qsoNumberTotal:  ", qsoNumberTotal);
@@ -330,9 +334,8 @@ function GetQsoYear(qsos)
 /**
  * Add a QSO to the table
  * @param {*} qsoInfo 
- * @param {*} scoreType 
  */
-function AddQsoToTable(qsoInfo, scoreType)
+function AddQsoToTable(qsoInfo)
 {
     // Get Table tbody for add QSO data
     var tableTbody = document.getElementById("tableQso").getElementsByTagName('tbody')[0];
@@ -341,58 +344,48 @@ function AddQsoToTable(qsoInfo, scoreType)
     // Create cells (td) for row
     // Day
     var cellDay = document.createElement("td");
-    cellDay.textContent = qsoInfo.qso_date.substring(6, 8);
+    cellDay.textContent = qsoInfo.day;
     // Month
     var cellMonth = document.createElement("td");
-    cellMonth.textContent = qsoInfo.qso_date.substring(4, 6);
+    cellMonth.textContent = qsoInfo.mounth;
     // Time
     var cellTime = document.createElement("td");
-    cellTime.textContent = qsoInfo.time_on.substring(0, 2) + "." + qsoInfo.time_on.substring(2, 4);
+    cellTime.textContent = qsoInfo.time;
     // Frequency
     var cellFrequency = document.createElement("td");
-    cellFrequency.textContent = qsoInfo.freq;
+    cellFrequency.textContent = qsoInfo.frequency;
     // Mode
     var cellMode = document.createElement("td");
     cellMode.textContent = qsoInfo.mode;
     // Call
     var cellCall = document.createElement("td");
-    if(scoreType === 0 && qsoInfo.call.toUpperCase() === "IQ0RM")
+    if(qsoInfo.scoreType === 0)
     {
-        cellCall.innerHTML = "<div style='background-color:#198754;color:#fff;border-radius:5px;padding-left:5px'>" + qsoInfo.call + "</div>"
+        cellCall.innerHTML = "<div style='background-color:#198754;color:#fff;border-radius:5px;padding-left:5px'>" + qsoInfo.callSign + "</div>"
     }
     else
     {
-        cellCall.textContent = qsoInfo.call;
+        cellCall.textContent = qsoInfo.callSign;
     }
     // Country
     var cellCountry = document.createElement("td");
-    let country = "";
-    if(qsoInfo.country === undefined && qsoInfo.country === "")
+    if(qsoInfo.scoreType === 1)
     {
-        country = qsoInfo.dxcc;
+        cellCountry.innerHTML = "<div style='background-color:#198754;color:#fff;border-radius:5px;padding-left:5px'>" + qsoInfo.country + "</div>"
     }
     else
     {
-        country = qsoInfo.country;
-    }
-
-    if(scoreType === 1)
-    {
-        cellCountry.innerHTML = "<div style='background-color:#198754;color:#fff;border-radius:5px;padding-left:5px'>" + country + "</div>"
-    }
-    else
-    {
-        cellCountry.textContent = country;
+        cellCountry.textContent = qsoInfo.country;
     }
     // CQ Zone
     var cellCqZone = document.createElement("td");
-    if(scoreType === 2)
+    if(qsoInfo.scoreType === 2)
     {
-        cellCqZone.innerHTML = "<div style='background-color:#198754;color:#fff;border-radius:5px;padding-left:5px'>" + qsoInfo.cqz + "</div>"
+        cellCqZone.innerHTML = "<div style='background-color:#198754;color:#fff;border-radius:5px;padding-left:5px'>" + qsoInfo.cqZone + "</div>"
     }
     else
     {
-        cellCqZone.textContent = qsoInfo.cqz;
+        cellCqZone.textContent = qsoInfo.cqZone;
     }
 
     // Add the cells to the row
@@ -434,7 +427,7 @@ function ResetScoreBox()
 }
 
 /**
- * 
+ * Read rules from json file
  * @returns 
  */
 async function ReadRulesConfig()
@@ -487,7 +480,7 @@ async function ReadRulesConfig()
 }
 
 /**
- * 
+ * Read dxcc entities from json file
  * @returns 
  */
 async function ReadDxccEntities()
@@ -502,6 +495,11 @@ async function ReadDxccEntities()
                 "deleted": false
             },
             {
+                "entityCode": 63,
+                "entityName": "FRENCH GUIANA",
+                "deleted": false
+            },
+            {
                 "entityCode": 248,
                 "entityName": "ITALY",
                 "deleted": false
@@ -509,6 +507,11 @@ async function ReadDxccEntities()
             {
                 "entityCode": 227,
                 "entityName": "FRANCE",
+                "deleted": false
+            },
+            {
+                "entityCode": 291,
+                "entityName": "UNITED STATES OF AMERICA",
                 "deleted": false
             }
         ]);
