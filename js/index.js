@@ -125,6 +125,8 @@ function onClickElabora()
     let qsoNumberCountry = 0;
     let qsoNumberCqZone = 0;
     let isAddedIq0rm = false;
+    let hasDxccError = false;
+    let hasDxccNotFound = false;
 
     document.getElementById("btnElabora").disabled = true;
 
@@ -162,8 +164,6 @@ function onClickElabora()
                     isAddedIq0rm = true;
 
                     document.getElementById("iq0rmScore").innerText = "Yes";
-                    // // Add qso to talbe
-                    // AddQsoToTable(qso, 0);
                 }
             }
             else
@@ -175,7 +175,26 @@ function onClickElabora()
                 }
                 else
                 {
-                    currentQsoCountry = dxccEntities.find(d=>d.entityCode === parseInt(qso.dxcc)).entityName;
+                    if(qso.dxcc !== undefined)
+                    {
+                        // Find the DXCC into the list
+                        const dxccEntity = dxccEntities.find(d=>d.entityCode === parseInt(qso.dxcc));
+                        // Check if has find the DXCC into the list
+                        if(dxccEntity !== undefined)
+                        {
+                            currentQsoCountry = dxccEntity.entityName;
+                        }
+                        else
+                        {
+                            console.log("QSO DXCC Country not found into list: ", qso.dxcc);
+                            hasDxccNotFound = true;
+                        }
+                    }
+                    else
+                    {
+                        console.log("QSO no DXCC Country info: ", qso);
+                        hasDxccError = true;
+                    }
                 }
 
                 // Check if maratonQso contains country or dxcc, if not add it
@@ -200,8 +219,6 @@ function onClickElabora()
                     // Update counter
                     qsoNumberCountry++;
                     document.getElementById("contryScore").innerText = qsoNumberCountry;
-                    // // Add qso to talbe
-                    // AddQsoToTable(qso, 1);
                 }
                 else
                 {
@@ -227,8 +244,6 @@ function onClickElabora()
                         // Update counter
                         qsoNumberCqZone++;
                         document.getElementById("cqZoneScore").innerText = qsoNumberCqZone;
-                        // // Add qso to tale
-                        // AddQsoToTable(qso, 2);
                     }
                 }
             }
@@ -237,11 +252,20 @@ function onClickElabora()
         }
     });
 
-
     maratonQso.forEach(qso =>
     {
         AddQsoToTable(qso);
     });
+
+    if(hasDxccError)
+    {
+        ShowMessage("Si è verificato uno o più errori nell'elaborazione dei dati DXCC del ADIF!", "danger");
+    }
+
+    if(hasDxccNotFound)
+    {
+        ShowMessage("Uno o più DXCC indicati nel file ADIF non sono stati trovati nella lista dei DXCC!", "danger");
+    }
 
     console.log("qsoNumberTotal:  ", qsoNumberTotal);
     console.log("qsoNumberCountry:  ", qsoNumberCountry);
